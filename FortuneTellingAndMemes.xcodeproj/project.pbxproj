@@ -6,17 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		48AFD2452CA1575800287216 /* FortuneTellingAndMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTellingAndMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		480956C02CA172A800E90D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480956BD2CA172A800E90D1D /* Assets.xcassets */; };
+		480956C12CA172A800E90D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480956B92CA172A800E90D1D /* Preview Assets.xcassets */; };
+		480956C22CA172A800E90D1D /* MemesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B22CA172A800E90D1D /* MemesData.swift */; };
+		480956C32CA172A800E90D1D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B52CA172A800E90D1D /* QuestionView.swift */; };
+		480956C42CA172A800E90D1D /* GradeButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */; };
+		480956C52CA172A800E90D1D /* Memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B12CA172A800E90D1D /* Memes.swift */; };
+		480956C62CA172A800E90D1D /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B42CA172A800E90D1D /* AnswerView.swift */; };
+		480956C72CA172A800E90D1D /* FortuneTellingAndMemesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */; };
+		480956C82CA172A800E90D1D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956BB2CA172A800E90D1D /* NetworkManager.swift */; };
+		480956C92CA172A800E90D1D /* View+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956AC2CA172A800E90D1D /* View+Ex.swift */; };
+		480956CA2CA172A800E90D1D /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B02CA172A800E90D1D /* Meme.swift */; };
+		486260032CA19E51005BD3D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486260022CA19E51005BD3D3 /* NetworkError.swift */; };
+		486260052CA1A6DA005BD3D3 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		48AFD2472CA1575800287216 /* FortuneTellingAndMemes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FortuneTellingAndMemes;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		480956AC2CA172A800E90D1D /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
+		480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeButtonModifier.swift; sourceTree = "<group>"; };
+		480956B02CA172A800E90D1D /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		480956B12CA172A800E90D1D /* Memes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memes.swift; sourceTree = "<group>"; };
+		480956B22CA172A800E90D1D /* MemesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesData.swift; sourceTree = "<group>"; };
+		480956B42CA172A800E90D1D /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		480956B52CA172A800E90D1D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		480956B92CA172A800E90D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		480956BB2CA172A800E90D1D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		480956BD2CA172A800E90D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneTellingAndMemesApp.swift; sourceTree = "<group>"; };
+		48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTellingAndMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		486260022CA19E51005BD3D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		48AFD2422CA1575800287216 /* Frameworks */ = {
@@ -29,20 +50,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480956AD2CA172A800E90D1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				480956AC2CA172A800E90D1D /* View+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		480956AF2CA172A800E90D1D /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		480956B32CA172A800E90D1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480956B02CA172A800E90D1D /* Meme.swift */,
+				480956B12CA172A800E90D1D /* Memes.swift */,
+				480956B22CA172A800E90D1D /* MemesData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		480956B62CA172A800E90D1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				480956B42CA172A800E90D1D /* AnswerView.swift */,
+				480956B52CA172A800E90D1D /* QuestionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480956B72CA172A800E90D1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		480956B82CA172A800E90D1D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				480956B32CA172A800E90D1D /* Model */,
+				480956B62CA172A800E90D1D /* View */,
+				480956B72CA172A800E90D1D /* ViewModel */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		480956BA2CA172A800E90D1D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				480956B92CA172A800E90D1D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		480956BC2CA172A800E90D1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				480956BB2CA172A800E90D1D /* NetworkManager.swift */,
+				486260022CA19E51005BD3D3 /* NetworkError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		480956BF2CA172A800E90D1D /* FortuneTellingAndMemes */ = {
+			isa = PBXGroup;
+			children = (
+				480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */,
+				480956BC2CA172A800E90D1D /* Services */,
+				480956B82CA172A800E90D1D /* Pages */,
+				480956AF2CA172A800E90D1D /* Modifiers */,
+				480956AD2CA172A800E90D1D /* Extensions */,
+				480956BA2CA172A800E90D1D /* Preview Content */,
+				480956BD2CA172A800E90D1D /* Assets.xcassets */,
+			);
+			path = FortuneTellingAndMemes;
+			sourceTree = "<group>";
+		};
 		48AFD23C2CA1575800287216 = {
 			isa = PBXGroup;
 			children = (
-				48AFD2472CA1575800287216 /* FortuneTellingAndMemes */,
-				48AFD2462CA1575800287216 /* Products */,
+				480956BF2CA172A800E90D1D /* FortuneTellingAndMemes */,
+				48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */,
 			);
-			sourceTree = "<group>";
-		};
-		48AFD2462CA1575800287216 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				48AFD2452CA1575800287216 /* FortuneTellingAndMemes.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,14 +157,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				48AFD2472CA1575800287216 /* FortuneTellingAndMemes */,
-			);
 			name = FortuneTellingAndMemes;
 			packageProductDependencies = (
 			);
 			productName = FortuneTellingAndMemes;
-			productReference = 48AFD2452CA1575800287216 /* FortuneTellingAndMemes.app */;
+			productReference = 48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +189,7 @@
 			mainGroup = 48AFD23C2CA1575800287216;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 48AFD2462CA1575800287216 /* Products */;
+			productRefGroup = 48AFD23C2CA1575800287216;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +203,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480956C02CA172A800E90D1D /* Assets.xcassets in Resources */,
+				480956C12CA172A800E90D1D /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +215,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480956C22CA172A800E90D1D /* MemesData.swift in Sources */,
+				480956C32CA172A800E90D1D /* QuestionView.swift in Sources */,
+				480956C42CA172A800E90D1D /* GradeButtonModifier.swift in Sources */,
+				480956C52CA172A800E90D1D /* Memes.swift in Sources */,
+				480956C62CA172A800E90D1D /* AnswerView.swift in Sources */,
+				480956C72CA172A800E90D1D /* FortuneTellingAndMemesApp.swift in Sources */,
+				480956C82CA172A800E90D1D /* NetworkManager.swift in Sources */,
+				480956C92CA172A800E90D1D /* View+Ex.swift in Sources */,
+				480956CA2CA172A800E90D1D /* Meme.swift in Sources */,
+				486260032CA19E51005BD3D3 /* NetworkError.swift in Sources */,
+				486260052CA1A6DA005BD3D3 /* QuestionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
