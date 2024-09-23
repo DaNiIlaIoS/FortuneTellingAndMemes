@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 final class QuestionViewModel: ObservableObject {
     private let networkManager = NetworkManager()
     @Published var memes: [Meme] = []
