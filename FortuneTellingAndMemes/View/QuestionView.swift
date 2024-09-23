@@ -19,7 +19,7 @@ struct QuestionView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             
                 NavigationLink {
-                    //
+                    AnswerView(question: $question)
                 } label: {
                     Text("Get fortune 🤪!")
                         .padding()
@@ -32,6 +32,9 @@ struct QuestionView: View {
             }
             .padding(.horizontal, 20)
             .navigationTitle("Fortune Telling")
+            .onAppear {
+                question = ""
+            }
         }
     }
 }
