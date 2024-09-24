@@ -11,48 +11,30 @@ struct AnswerView: View {
     @Binding var question: String
     @Binding var memes: [Meme]
     
-    @State private var imageUrl = ""
-    @State private var imageOpacity = 0.0
+    @State private var selectedMemeIndex: Int? = nil
+    @State private var imagesUrls: [String] = []
+    @State private var imageOpacities: [Double] = [0.0, 0.0, 0.0]
     
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        VStack {
-            Spacer()
+        VStack(spacing: 20) {
             
             if !memes.isEmpty {
-                AsyncImage(url: URL(string: imageUrl)) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .opacity(imageOpacity)
-                        .onAppear {
-                            withAnimation(.easeIn(duration: 2)) {
-                                imageOpacity = 1
-                            }
-                        }
-                } placeholder: {
-                    ProgressView()
-                        .frame(width: 100, height: 100)
+                HStack {
+                    ForEach(0..<imagesUrls.count, id: \.self) { index in
+                        ImageButtonView(selectedMemeIndex: $selectedMemeIndex, imagesUrls: $imagesUrls, imageOpacities: $imageOpacities, index: index)
+                    }
                 }
-                .overlay {
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(.black, lineWidth: 2)
-                }
-                .id(imageUrl)
             } else {
                 Text("No images available")
             }
             
-            Spacer()
-            
             HStack {
                 Button {
-                    imageOpacity = 0
-                    withAnimation {
-                        imageUrl = memes.randomElement()?.url ?? ""
-                    }
+                    selectedMemeIndex = nil
+                    imageOpacities = [0.0, 0.0, 0.0]
+                    imagesUrls = Array(memes.shuffled().prefix(3).map { $0.url })
                 } label: {
                     Text("👎")
                         .gradeButton()
@@ -65,12 +47,14 @@ struct AnswerView: View {
                         .gradeButton()
                 }
             }
-            Spacer()
+            .opacity(selectedMemeIndex == nil ? 0.5 : 1)
+            .disabled(selectedMemeIndex == nil)
+
         }
         .padding(.horizontal, 40)
         .navigationTitle(question)
         .onAppear {
-            imageUrl = memes.randomElement()?.url ?? ""
+            imagesUrls = Array(memes.shuffled().prefix(3).map { $0.url })
         }
     }
 }

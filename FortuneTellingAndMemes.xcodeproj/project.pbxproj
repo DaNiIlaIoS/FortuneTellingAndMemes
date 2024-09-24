@@ -20,6 +20,7 @@
 		480956CA2CA172A800E90D1D /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B02CA172A800E90D1D /* Meme.swift */; };
 		486260032CA19E51005BD3D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486260022CA19E51005BD3D3 /* NetworkError.swift */; };
 		486260052CA1A6DA005BD3D3 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */; };
+		48A55CD22CA2C2D800BE10B5 /* ImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTellingAndMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486260022CA19E51005BD3D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 		480956B62CA172A800E90D1D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				480956B42CA172A800E90D1D /* AnswerView.swift */,
 				480956B52CA172A800E90D1D /* QuestionView.swift */,
+				480956B42CA172A800E90D1D /* AnswerView.swift */,
+				48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				480956C22CA172A800E90D1D /* MemesData.swift in Sources */,
 				480956C32CA172A800E90D1D /* QuestionView.swift in Sources */,
+				48A55CD22CA2C2D800BE10B5 /* ImageButtonView.swift in Sources */,
 				480956C42CA172A800E90D1D /* GradeButtonModifier.swift in Sources */,
 				480956C52CA172A800E90D1D /* Memes.swift in Sources */,
 				480956C62CA172A800E90D1D /* AnswerView.swift in Sources */,
