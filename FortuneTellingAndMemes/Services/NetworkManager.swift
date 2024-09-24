@@ -12,9 +12,7 @@ final class NetworkManager {
     func getMemes() async throws -> [Meme] {
         guard let url = URL(string: "https://api.imgflip.com/get_memes") else { throw NetworkError.invalidURL}
         
-        let request = URLRequest(url: url)
-        
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, response) = try await URLSession.shared.data(from: url)
         
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
             throw NetworkError.invalidResponse
