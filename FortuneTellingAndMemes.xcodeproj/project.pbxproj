@@ -6,17 +6,50 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		48AFD2452CA1575800287216 /* FortuneTellingAndMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTellingAndMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		4805718D2CA4090C0019809D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805718C2CA4090C0019809D /* Persistence.swift */; };
+		4805718F2CA409400019809D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805718E2CA409400019809D /* CoreDataManager.swift */; };
+		480571922CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 480571902CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld */; };
+		480571A12CA4112D0019809D /* Answer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805719F2CA4112D0019809D /* Answer+CoreDataClass.swift */; };
+		480571D12CA423B60019809D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480571D02CA423B60019809D /* HistoryView.swift */; };
+		480956C02CA172A800E90D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480956BD2CA172A800E90D1D /* Assets.xcassets */; };
+		480956C12CA172A800E90D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480956B92CA172A800E90D1D /* Preview Assets.xcassets */; };
+		480956C22CA172A800E90D1D /* MemesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B22CA172A800E90D1D /* MemesData.swift */; };
+		480956C32CA172A800E90D1D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B52CA172A800E90D1D /* QuestionView.swift */; };
+		480956C42CA172A800E90D1D /* GradeButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */; };
+		480956C52CA172A800E90D1D /* Memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B12CA172A800E90D1D /* Memes.swift */; };
+		480956C62CA172A800E90D1D /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B42CA172A800E90D1D /* AnswerView.swift */; };
+		480956C72CA172A800E90D1D /* FortuneTellingAndMemesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */; };
+		480956C82CA172A800E90D1D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956BB2CA172A800E90D1D /* NetworkManager.swift */; };
+		480956C92CA172A800E90D1D /* View+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956AC2CA172A800E90D1D /* View+Ex.swift */; };
+		480956CA2CA172A800E90D1D /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B02CA172A800E90D1D /* Meme.swift */; };
+		486260032CA19E51005BD3D3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486260022CA19E51005BD3D3 /* NetworkError.swift */; };
+		486260052CA1A6DA005BD3D3 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */; };
+		48A55CD22CA2C2D800BE10B5 /* ImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		48AFD2472CA1575800287216 /* FortuneTellingAndMemes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FortuneTellingAndMemes;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		4805718C2CA4090C0019809D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4805718E2CA409400019809D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		480571912CA409E60019809D /* FortuneTellingAndMemes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FortuneTellingAndMemes.xcdatamodel; sourceTree = "<group>"; };
+		4805719F2CA4112D0019809D /* Answer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		480571D02CA423B60019809D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		480956AC2CA172A800E90D1D /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
+		480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeButtonModifier.swift; sourceTree = "<group>"; };
+		480956B02CA172A800E90D1D /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		480956B12CA172A800E90D1D /* Memes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memes.swift; sourceTree = "<group>"; };
+		480956B22CA172A800E90D1D /* MemesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesData.swift; sourceTree = "<group>"; };
+		480956B42CA172A800E90D1D /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		480956B52CA172A800E90D1D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		480956B92CA172A800E90D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		480956BB2CA172A800E90D1D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		480956BD2CA172A800E90D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneTellingAndMemesApp.swift; sourceTree = "<group>"; };
+		48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTellingAndMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		486260022CA19E51005BD3D3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		48AFD2422CA1575800287216 /* Frameworks */ = {
@@ -29,20 +62,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4805718A2CA408E10019809D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4805718B2CA408F40019809D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4805718C2CA4090C0019809D /* Persistence.swift */,
+				4805718E2CA409400019809D /* CoreDataManager.swift */,
+				4805719F2CA4112D0019809D /* Answer+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		480956AD2CA172A800E90D1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				480956AC2CA172A800E90D1D /* View+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		480956AF2CA172A800E90D1D /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		480956B32CA172A800E90D1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480956B02CA172A800E90D1D /* Meme.swift */,
+				480956B12CA172A800E90D1D /* Memes.swift */,
+				480956B22CA172A800E90D1D /* MemesData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		480956B62CA172A800E90D1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				480956B52CA172A800E90D1D /* QuestionView.swift */,
+				480956B42CA172A800E90D1D /* AnswerView.swift */,
+				480571D02CA423B60019809D /* HistoryView.swift */,
+				48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		480956B72CA172A800E90D1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				486260042CA1A6DA005BD3D3 /* QuestionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		480956B82CA172A800E90D1D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				480956B32CA172A800E90D1D /* Model */,
+				480956B62CA172A800E90D1D /* View */,
+				480956B72CA172A800E90D1D /* ViewModel */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		480956BA2CA172A800E90D1D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				480956B92CA172A800E90D1D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		480956BC2CA172A800E90D1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				480956BB2CA172A800E90D1D /* NetworkManager.swift */,
+				486260022CA19E51005BD3D3 /* NetworkError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		480956BF2CA172A800E90D1D /* FortuneTellingAndMemes */ = {
+			isa = PBXGroup;
+			children = (
+				4805718A2CA408E10019809D /* App */,
+				480956BC2CA172A800E90D1D /* Services */,
+				4805718B2CA408F40019809D /* CoreData */,
+				480956B82CA172A800E90D1D /* Pages */,
+				480956AF2CA172A800E90D1D /* Modifiers */,
+				480956AD2CA172A800E90D1D /* Extensions */,
+				480956BA2CA172A800E90D1D /* Preview Content */,
+				480956BD2CA172A800E90D1D /* Assets.xcassets */,
+				480571902CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld */,
+			);
+			path = FortuneTellingAndMemes;
+			sourceTree = "<group>";
+		};
 		48AFD23C2CA1575800287216 = {
 			isa = PBXGroup;
 			children = (
-				48AFD2472CA1575800287216 /* FortuneTellingAndMemes */,
-				48AFD2462CA1575800287216 /* Products */,
+				480956BF2CA172A800E90D1D /* FortuneTellingAndMemes */,
+				48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */,
 			);
-			sourceTree = "<group>";
-		};
-		48AFD2462CA1575800287216 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				48AFD2452CA1575800287216 /* FortuneTellingAndMemes.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,14 +191,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				48AFD2472CA1575800287216 /* FortuneTellingAndMemes */,
-			);
 			name = FortuneTellingAndMemes;
 			packageProductDependencies = (
 			);
 			productName = FortuneTellingAndMemes;
-			productReference = 48AFD2452CA1575800287216 /* FortuneTellingAndMemes.app */;
+			productReference = 48625FB92CA19BDD005BD3D3 /* FortuneTellingAndMemes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +223,7 @@
 			mainGroup = 48AFD23C2CA1575800287216;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 48AFD2462CA1575800287216 /* Products */;
+			productRefGroup = 48AFD23C2CA1575800287216;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480956C02CA172A800E90D1D /* Assets.xcassets in Resources */,
+				480956C12CA172A800E90D1D /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +249,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480956C22CA172A800E90D1D /* MemesData.swift in Sources */,
+				480956C32CA172A800E90D1D /* QuestionView.swift in Sources */,
+				480571922CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld in Sources */,
+				48A55CD22CA2C2D800BE10B5 /* ImageButtonView.swift in Sources */,
+				480956C42CA172A800E90D1D /* GradeButtonModifier.swift in Sources */,
+				480956C52CA172A800E90D1D /* Memes.swift in Sources */,
+				480956C62CA172A800E90D1D /* AnswerView.swift in Sources */,
+				480956C72CA172A800E90D1D /* FortuneTellingAndMemesApp.swift in Sources */,
+				4805718D2CA4090C0019809D /* Persistence.swift in Sources */,
+				480956C82CA172A800E90D1D /* NetworkManager.swift in Sources */,
+				480956C92CA172A800E90D1D /* View+Ex.swift in Sources */,
+				480956CA2CA172A800E90D1D /* Meme.swift in Sources */,
+				486260032CA19E51005BD3D3 /* NetworkError.swift in Sources */,
+				4805718F2CA409400019809D /* CoreDataManager.swift in Sources */,
+				480571A12CA4112D0019809D /* Answer+CoreDataClass.swift in Sources */,
+				480571D12CA423B60019809D /* HistoryView.swift in Sources */,
+				486260052CA1A6DA005BD3D3 /* QuestionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +404,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -266,6 +414,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivozelezov.FortuneTellingAndMemes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -285,8 +437,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,6 +447,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivozelezov.FortuneTellingAndMemes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,6 +479,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		480571902CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				480571912CA409E60019809D /* FortuneTellingAndMemes.xcdatamodel */,
+			);
+			currentVersion = 480571912CA409E60019809D /* FortuneTellingAndMemes.xcdatamodel */;
+			path = FortuneTellingAndMemes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 48AFD23D2CA1575800287216 /* Project object */;
 }
