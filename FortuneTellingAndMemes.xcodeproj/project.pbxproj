@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4805718D2CA4090C0019809D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805718C2CA4090C0019809D /* Persistence.swift */; };
+		4805718F2CA409400019809D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805718E2CA409400019809D /* CoreDataManager.swift */; };
+		480571922CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 480571902CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld */; };
+		480571A12CA4112D0019809D /* Answer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805719F2CA4112D0019809D /* Answer+CoreDataClass.swift */; };
+		480571D12CA423B60019809D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480571D02CA423B60019809D /* HistoryView.swift */; };
 		480956C02CA172A800E90D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480956BD2CA172A800E90D1D /* Assets.xcassets */; };
 		480956C12CA172A800E90D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480956B92CA172A800E90D1D /* Preview Assets.xcassets */; };
 		480956C22CA172A800E90D1D /* MemesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480956B22CA172A800E90D1D /* MemesData.swift */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4805718C2CA4090C0019809D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4805718E2CA409400019809D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		480571912CA409E60019809D /* FortuneTellingAndMemes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FortuneTellingAndMemes.xcdatamodel; sourceTree = "<group>"; };
+		4805719F2CA4112D0019809D /* Answer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		480571D02CA423B60019809D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		480956AC2CA172A800E90D1D /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
 		480956AE2CA172A800E90D1D /* GradeButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeButtonModifier.swift; sourceTree = "<group>"; };
 		480956B02CA172A800E90D1D /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
@@ -52,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4805718A2CA408E10019809D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4805718B2CA408F40019809D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4805718C2CA4090C0019809D /* Persistence.swift */,
+				4805718E2CA409400019809D /* CoreDataManager.swift */,
+				4805719F2CA4112D0019809D /* Answer+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		480956AD2CA172A800E90D1D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,7 @@
 			children = (
 				480956B52CA172A800E90D1D /* QuestionView.swift */,
 				480956B42CA172A800E90D1D /* AnswerView.swift */,
+				480571D02CA423B60019809D /* HistoryView.swift */,
 				48A55CD12CA2C2D800BE10B5 /* ImageButtonView.swift */,
 			);
 			path = View;
@@ -126,13 +155,15 @@
 		480956BF2CA172A800E90D1D /* FortuneTellingAndMemes */ = {
 			isa = PBXGroup;
 			children = (
-				480956BE2CA172A800E90D1D /* FortuneTellingAndMemesApp.swift */,
+				4805718A2CA408E10019809D /* App */,
 				480956BC2CA172A800E90D1D /* Services */,
+				4805718B2CA408F40019809D /* CoreData */,
 				480956B82CA172A800E90D1D /* Pages */,
 				480956AF2CA172A800E90D1D /* Modifiers */,
 				480956AD2CA172A800E90D1D /* Extensions */,
 				480956BA2CA172A800E90D1D /* Preview Content */,
 				480956BD2CA172A800E90D1D /* Assets.xcassets */,
+				480571902CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld */,
 			);
 			path = FortuneTellingAndMemes;
 			sourceTree = "<group>";
@@ -220,15 +251,20 @@
 			files = (
 				480956C22CA172A800E90D1D /* MemesData.swift in Sources */,
 				480956C32CA172A800E90D1D /* QuestionView.swift in Sources */,
+				480571922CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld in Sources */,
 				48A55CD22CA2C2D800BE10B5 /* ImageButtonView.swift in Sources */,
 				480956C42CA172A800E90D1D /* GradeButtonModifier.swift in Sources */,
 				480956C52CA172A800E90D1D /* Memes.swift in Sources */,
 				480956C62CA172A800E90D1D /* AnswerView.swift in Sources */,
 				480956C72CA172A800E90D1D /* FortuneTellingAndMemesApp.swift in Sources */,
+				4805718D2CA4090C0019809D /* Persistence.swift in Sources */,
 				480956C82CA172A800E90D1D /* NetworkManager.swift in Sources */,
 				480956C92CA172A800E90D1D /* View+Ex.swift in Sources */,
 				480956CA2CA172A800E90D1D /* Meme.swift in Sources */,
 				486260032CA19E51005BD3D3 /* NetworkError.swift in Sources */,
+				4805718F2CA409400019809D /* CoreDataManager.swift in Sources */,
+				480571A12CA4112D0019809D /* Answer+CoreDataClass.swift in Sources */,
+				480571D12CA423B60019809D /* HistoryView.swift in Sources */,
 				486260052CA1A6DA005BD3D3 /* QuestionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +479,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		480571902CA409E60019809D /* FortuneTellingAndMemes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				480571912CA409E60019809D /* FortuneTellingAndMemes.xcdatamodel */,
+			);
+			currentVersion = 480571912CA409E60019809D /* FortuneTellingAndMemes.xcdatamodel */;
+			path = FortuneTellingAndMemes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 48AFD23D2CA1575800287216 /* Project object */;
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct FortuneTellingAndMemesApp: App {
+    
     var body: some Scene {
         WindowGroup {
             QuestionView()
