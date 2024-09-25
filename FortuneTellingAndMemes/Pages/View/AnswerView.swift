@@ -15,7 +15,6 @@ struct AnswerView: View {
     
     @State private var selectedMemeIndex: Int? = nil
     @State private var imagesUrls: [String] = []
-    @State private var imageOpacity: Double = 0
     
     @Environment(\.dismiss) private var dismiss
     
