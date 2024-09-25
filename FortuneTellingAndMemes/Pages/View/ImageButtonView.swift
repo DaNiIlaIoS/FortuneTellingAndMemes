@@ -10,13 +10,16 @@ import SwiftUI
 struct ImageButtonView: View {
     @Binding var selectedMemeIndex: Int?
     @Binding var imagesUrls: [String]
-    @Binding var imageOpacities: [Double]
+    
+    @State var imageOpacity: Double = 0
     
     let index: Int
     
     var body: some View {
         Button {
-            selectedMemeIndex = index
+            withAnimation {
+                selectedMemeIndex = index
+            }
         } label: {
             if selectedMemeIndex == index {
                 AsyncImage(url: URL(string: imagesUrls[index])) { image in
@@ -24,12 +27,13 @@ struct ImageButtonView: View {
                         .resizable()
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .opacity(imageOpacities[index])
+                        .opacity(imageOpacity)
                         .onAppear {
-                            withAnimation(.easeIn(duration: 2)) {
-                                imageOpacities[index] = 1
+                            withAnimation(.easeIn(duration: 1)) {
+                                imageOpacity = 1
                             }
                         }
+                        
                 } placeholder: {
                     ProgressView()
                         .frame(width: 100, height: 100)
@@ -40,6 +44,7 @@ struct ImageButtonView: View {
                     .foregroundStyle(.black)
                     .frame(width: 100, height: 100)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .transition(.asymmetric(insertion: .scale, removal: .opacity))
             }
         }
     }

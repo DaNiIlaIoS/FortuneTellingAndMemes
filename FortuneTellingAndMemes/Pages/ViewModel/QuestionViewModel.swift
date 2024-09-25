@@ -11,12 +11,12 @@ import Foundation
 final class QuestionViewModel: ObservableObject {
     private let networkManager = NetworkManager()
     @Published var memes: [Meme] = []
-    @Published var isLoading = false
+    @Published var isLoading = true
     
     func fetchMemes() {
         Task {
             memes = try await networkManager.getMemes()
-            isLoading = true
+            isLoading = false
         }
     }
 }
