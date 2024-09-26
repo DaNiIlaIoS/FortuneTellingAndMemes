@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @ObservedObject var coreManager: CoreDataManager
+    @ObservedObject var coreManager = CoreDataManager.shared
     
     var body: some View {
         List {
@@ -38,6 +38,9 @@ struct HistoryView: View {
         .scrollContentBackground(.hidden) // Скрываем стандартный фон
         .background(.mainBG)
         .navigationTitle("History")
+        .toolbar {
+            EditButton()
+        }
         .onAppear {
             coreManager.fetchAnswers()
         }

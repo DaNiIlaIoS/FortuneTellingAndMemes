@@ -8,6 +8,10 @@
 import CoreData
 
 final class CoreDataManager: ObservableObject {
+    
+    static let shared = CoreDataManager()
+    private init() {}
+    
     private let persistentContainer = PersistenceController.shared.container
     
     private var viewContext: NSManagedObjectContext {

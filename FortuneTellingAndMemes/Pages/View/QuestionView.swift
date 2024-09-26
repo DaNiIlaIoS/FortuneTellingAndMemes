@@ -9,7 +9,6 @@ import SwiftUI
 
 struct QuestionView: View {
     @StateObject private var viewModel = QuestionViewModel()
-    @StateObject private var coreManager = CoreDataManager()
     
     @State private var question = ""
     
@@ -25,7 +24,7 @@ struct QuestionView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                     
                     NavigationLink {
-                        AnswerView(coreManager: coreManager, question: $question, memes: $viewModel.memes)
+                        AnswerView(question: $question, memes: $viewModel.memes)
                     } label: {
                         Text("Get fortune 🤪!")
                             .padding()
@@ -42,7 +41,7 @@ struct QuestionView: View {
                 .navigationTitle("Fortune Telling")
                 .toolbar {
                     NavigationLink("History") {
-                        HistoryView(coreManager: coreManager)
+                        HistoryView()
                     }
                 }
                 .onAppear {
@@ -53,4 +52,8 @@ struct QuestionView: View {
             .ignoresSafeArea()
         }
     }
+}
+
+#Preview {
+    QuestionView()
 }

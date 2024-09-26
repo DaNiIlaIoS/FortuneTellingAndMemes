@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnswerView: View {
-    @ObservedObject var coreManager: CoreDataManager
+    @ObservedObject var coreManager = CoreDataManager.shared
     
     @Binding var question: String
     @Binding var memes: [Meme]
