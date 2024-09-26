@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @ObservedObject var coreManager = CoreDataManager.shared
+    @EnvironmentObject var coreManager: CoreDataManager
     
     var body: some View {
         List {

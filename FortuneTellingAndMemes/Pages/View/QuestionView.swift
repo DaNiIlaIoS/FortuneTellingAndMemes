@@ -9,6 +9,7 @@ import SwiftUI
 
 struct QuestionView: View {
     @StateObject private var viewModel = QuestionViewModel()
+    @StateObject private var coreManager = CoreDataManager()
     
     @State private var question = ""
     
@@ -25,6 +26,7 @@ struct QuestionView: View {
                     
                     NavigationLink {
                         AnswerView(question: $question, memes: $viewModel.memes)
+                            .environmentObject(coreManager)
                     } label: {
                         Text("Get fortune 🤪!")
                             .padding()
@@ -42,6 +44,7 @@ struct QuestionView: View {
                 .toolbar {
                     NavigationLink("History") {
                         HistoryView()
+                            .environmentObject(coreManager)
                     }
                 }
                 .onAppear {
